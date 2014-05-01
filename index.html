@@ -2,52 +2,235 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<link rel="stylesheet" type="text/css" href="assets/style.css" />
-	<!--<script type="text/javascript" src="assets/jquery-1.8.3.min.js" charset="utf-8"></script>-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 	<script src="assets/jquery-1.9.1.js"></script>
 	<script type="text/javascript" src="assets/waypoints.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="assets/jquery.easing.1.3.js"></script>
 	<script src="assets/script.js"></script>
 	<title>Cal Ice Hockey</title>
 	<link rel="shortcut icon" href="favicon.ico">
 </head>
 <body>
+	<div id="login-modal-container">
+		<div id="login-modal-overlay"></div>
+		<div id="login-modal-box-wrapper">
+			<div id="login-modal-box">
+				<div id="login-modal-header">Login</div>
+                <div id="modal-content">
+                    <input type="text" id="login-input-box" placeholder="Username"/>
+                    <input type="password" id="login-input-box" placeholder="Password"/>
+                </div>
+                <div id="login-modal-footer">
+                    <div id="submit-button" class="modal-button">Submit</div>
+                    <div id="login-cancel-button" class="modal-button">Cancel</div>
+                </div>
+            </div>
+        </div>
+    </div>
 	<div id="header">
-		<div id="header-content">
-			<div id="logo"><img class="img-scaled-wh" src="assets/images/logo.jpg" /></div>
+		<div id="header-container">
+			<div id="header-content">
+				<div id="logo"><a href="http://www.berkeley.edu/index.html"><img class="img-scaled-wh" src="assets/images/logo.jpg" /></a></div>
+				<a href="index.html"><div id="title">Ice Hockey</div></a>
+				<div id="login-container">
+					<div id="login">Fan Login</div>
+					<div id="login-img"><img id="fan-login-icon" class="img-scaled-wh" src="assets/images/jersey.svg" /></div>
+				</div>
+				<!-- <div id="social-media-conatiner">
+				</div> -->
+			</div>
 		</div>
 	</div>
 	<div id="body-container">
 		<div id="nav-container">
 			<div id="nav">
 				<div id="nav-content">
-					<div class="nav-item">News</div>
-					<div class="nav-item">Team</div>
+					<a href="news.html"><div class="nav-item">News</div></a>
+					<a href="team.html"><div class="nav-item">Team</div></a>
 					<div class="nav-item">Schedule</div>
 					<div class="nav-item">Tickets</div>
 					<div class="nav-item">Fan Zone!</div>
 					<div class="nav-item">Recruits</div>
 					<div class="nav-item">Donate</div>
-					<div class="nav-item" id="nav-search">Search<img id="nav-search-button" class="img-scaled-wh" src="assets/images/search-icon.svg" /></div>
+					<div class="nav-item" id="nav-search">Search<img id="nav-search-button" class="img-scaled-wh" src="assets/images/search-icon.svg" />
+						<div id="search-modal-container">
+							<div id="modal-content">
+								<input type="text" id="input-box" placeholder="Search CalIceHockey.com..."/>
+								<div id="search-button" class="modal-button">Search</div>
+                    			<div id="cancel-button" class="modal-button">Cancel</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div id="content-container">
-			<div id="content">
+			<div id="top-wrapper">
 				<div id="carousel-container">
 					<div id="carousel">
-						<div class="carousel-item"><img class="img-scaled-wh" src="assets/images/award-hero.png" /></div>
-						<div class="carousel-item"><img class="img-scaled-wh" src="assets/images/dribbblets-1.png" /></div>
-						<div class="carousel-item"><img class="img-scaled-wh" src="assets/images/dribbblets-2.png" /></div>
-						<div class="carousel-item"><img class="img-scaled-wh" src="assets/images/potato-1.png" /></div>
-						<div class="carousel-item"><img class="img-scaled-wh" src="assets/images/potato-1.png" /></div>
+						<div class="carousel-item"><img class="img-scaled-wh" src="assets/images/carousel-images/cal1.jpg" /></div>
+						<div class="carousel-item"><img class="img-scaled-wh" src="assets/images/carousel-images/cal2.jpg" /></div>
+						<div class="carousel-item"><img class="img-scaled-wh" src="assets/images/carousel-images/cal3.jpg" /></div>
+						<div class="carousel-item"><img class="img-scaled-wh" src="assets/images/carousel-images/cal4.jpg" /></div>
+						<div class="carousel-item"><img class="img-scaled-wh" src="assets/images/carousel-images/cal5.jpg" /></div>
+						<div class="carousel-item"><img class="img-scaled-wh" src="assets/images/carousel-images/cal6.jpg" /></div>
+						<div class="carousel-item"><img class="img-scaled-wh" src="assets/images/carousel-images/cal7.jpg" /></div>
 						<div class="clear"></div>
 					</div>
-					<div id="carousel-prev"><img class="img-scaled-w" src="assets/images/prev.svg" /></div>
-					<div id="carousel-next"><img class="img-scaled-w" src="assets/images/next.svg" /></div>
+					<div id="button-container">
+						<div id="carousel-prev">
+							<div class="carousel-button"><img class="img-scaled-w" src="assets/images/prev.svg" /></div>
+						</div>
+						<div id="carousel-next">
+							<div class="carousel-button"><img class="img-scaled-w" src="assets/images/next.svg" /></div>
+						</div>
+					</div>
+				</div>
+				<div id="features-container">
+					<div class="box-title" id="feature-width">Features</div>
+					<div id="feature-footer"><div id="footer-icon"><img class="img-scaled-wh" src="assets/images/down.svg" /></div></div>
+					<div class="box-content">
+						<div class="box-item" id="feature-width">
+							<div class="box-item-title">Congrats to Accepted Students!</div>
+							<div class="box-item-subtitle">If you are interested in playing ice hockey at cal, email calice@berkeley.edu<span class="elipses">. . .</span><span class="date">4/1/14</span></div>
+						</div>
+						<div class="box-item" id="feature-width">
+							<div class="box-item-title">Cal Ice Hockey Golf Tournament</div>
+							<div class="box-item-subtitle">The squad kicks of their annual golf tournament, join at CalIceHockey.com<span class="elipses">. . .</span><span class="date">3/15/14</span></div>
+						</div>
+						<div class="box-item" id="feature-width">
+							<div class="box-item-title">Season Wrap-up</div>
+							<div class="box-item-subtitle">Take a look back at some of this season's best moments<span class="elipses">. . .</span><span class="date">2/28/14</span></div>
+						</div>
+						<div class="box-item" id="feature-width">
+							<div class="box-item-title">Cal Wins the Big-Freeze!</div>
+							<div class="box-item-subtitle">The Golden Bears shut the Cardinal out, 10-0, win 10th straight Big-Freeze<span class="elipses">. . .</span><span class="date">2/1/14</span></div>
+						</div>
+						<div class="box-item" id="feature-width">
+							<div class="box-item-title">Back in the Saddle</div>
+							<div class="box-item-subtitle">After a long break, the Golden Bears are back in action<span class="elipses">. . .</span><span class="date">1/21/14</span></div>
+						</div>
+						<div class="box-item" id="feature-width">
+							<div class="box-item-title">SoCal Roadtrip</div>
+							<div class="box-item-subtitle">Follow the team as they venture down South to take on rivals USC and UCLA<span class="elipses">. . .</span><span class="date">11/21/13</span></div>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div id="blank" style="height: 1000px;">
-
+				<div id="quick-info-container">
+					<div class="quick-info-box" style="margin-left: 22px;">
+						<div class="box-title" id="quick-box-width">Upcoming Games</div>
+						<div class="box-item" id="quick-box-width">
+							<div class="home-team"><img class="img-scaled-wh" src="assets/images/hockeyplayer.svg" /></div>
+							<div class="game-info">
+								<div class="game-title">vs. Stanford</div>
+								<div class="game-date"> Saturday, October 3, 2014</div>
+								<div class="game-tix">Tickets >></div>
+							</div>
+						</div>
+						<div class="box-item" id="quick-box-width">
+							<div class="away-team"><img class="img-scaled-wh" src="assets/images/hockeyplayeraway.svg" /></div>
+							<div class="game-info">
+								<div class="game-title">@ UCLA</div>
+								<div class="game-date"> Friday, November 15, 2014</div>
+								<div class="game-tix">Tickets >></div>
+							</div>
+						</div>
+						<div class="box-item" id="quick-box-width">
+							<div class="away-team"><img class="img-scaled-wh" src="assets/images/hockeyplayeraway.svg" /></div>
+							<div class="game-info">
+								<div class="game-title">@ USC</div>
+								<div class="game-date"> Saturday, Novembe, 2014</div>
+								<div class="game-tix">Tickets >></div>
+							</div>
+						</div>
+						<div class="box-item" id="quick-box-width">
+							<div class="home-team"><img class="img-scaled-wh" src="assets/images/hockeyplayer.svg" /></div>
+							<div class="game-info">
+								<div class="game-title">vs. Utah</div>
+								<div class="game-date"> Sunday, December 15, 2014</div>
+								<div class="game-tix">Tickets >></div>
+							</div>
+						</div>
+					</div>
+					<div class="quick-info-box">
+						<div class="box-title" id="quick-box-width">Social</div>
+							<div class="box-item" id="quick-box-width">
+								<div class="social-img"><img class="img-scaled-wh" src="assets/images/bird.svg" /></div>
+								<div class="social-title">Follow @CalIceHockey</div>
+							</div>
+							<div class="box-item" id="quick-box-width">
+							<div class="social-title">Recent tweets from @CalIceHockey</div>
+							<div class="tweet">Quodsi concludaturque ne sit!!!</div>
+							<div class="tweet">Ex nec moderatius intellegam...</div>
+							<div class="tweet">Pri te eros augue feugiat.</div>
+							<div class="tweet">Temporibus ne, has ad commune corrumpit.</div>
+						</div>
+						<div class="box-item" id="quick-box-width">
+							<div class="social-img"><img class="img-scaled-wh" src="assets/images/thumb.svg" /></div>
+							<div class="social-title">Like us on Facebook!</div>
+						</div>
+					</div>
+					<div class="quick-info-box">
+						<div class="box-title" id="quick-box-width">PAC-8 Standings</div>
+						<table class="tg">
+						  <tr>
+						    <th class="tg-lvl4">Rank</th>
+						    <th class="tg-lvl4">School</th>
+						    <th class="tg-lvl4">Conference<br>Record</th>
+						    <th class="tg-lvl4">Points</th>
+						  </tr>
+						  <tr>
+						    <td class="tg-lvl4">1</td>
+						    <td class="tg-wlev">Cal</td>
+						    <td class="tg-6iqf">5-0-0</td>
+						    <td class="tg-6iqf">10</td>
+						  </tr>
+						  <tr>
+						    <td class="tg-lvl4">2</td>
+						    <td class="tg-wlev">Utah</td>
+						    <td class="tg-6iqf">4-1-0</td>
+						    <td class="tg-6iqf">8</td>
+						  </tr>
+						  <tr>
+						    <td class="tg-lvl4">3</td>
+						    <td class="tg-wlev">USC</td>
+						    <td class="tg-6iqf">3-1-1</td>
+						    <td class="tg-6iqf">7</td>
+						  </tr>
+						  <tr>
+						    <td class="tg-lvl4">4</td>
+						    <td class="tg-wlev">ASU</td>
+						    <td class="tg-6iqf">3-2-0</td>
+						    <td class="tg-6iqf">6</td>
+						  </tr>
+						  <tr>
+						    <td class="tg-lvl4">5</td>
+						    <td class="tg-wlev">UCLA</td>
+						    <td class="tg-6iqf">2-2-1</td>
+						    <td class="tg-6iqf">5</td>
+						  </tr>
+						  <tr>
+						    <td class="tg-lvl4">6</td>
+						    <td class="tg-wlev">Washington</td>
+						    <td class="tg-6iqf">2-3-0</td>
+						    <td class="tg-6iqf">4</td>
+						  </tr>
+						  <tr>
+						    <td class="tg-lvl4">7</td>
+						    <td class="tg-wlev">UW</td>
+						    <td class="tg-6iqf">1-3-1</td>
+						    <td class="tg-6iqf">2</td>
+						  </tr>
+						  <tr>
+						    <td class="tg-lvl4">8</td>
+						    <td class="tg-wlev">Oregon</td>
+						    <td class="tg-6iqf">0-5-0</td>
+						    <td class="tg-6iqf">0</td>
+						  </tr>
+						</table>
+					</div>
+				</div>
 		</div>
 	</div>
 </body>
