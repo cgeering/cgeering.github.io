@@ -15,7 +15,7 @@ $(document).ready(function() {
         if(carousel_margin >= 0) {
             return false;
         } else {
-            $('#carousel').animate({'marginLeft': '+=672px'}, 500, "easeOutCirc");
+            $('#carousel').animate({'marginLeft': '+=672px'}, 750, "easeOutCirc");
         }
     });
 
@@ -24,7 +24,7 @@ $(document).ready(function() {
         if(carousel_margin <= -4032) {
             return false;
         } else {
-            $('#carousel').animate({'marginLeft': '-=672px'}, 500, "easeOutCirc");
+            $('#carousel').animate({'marginLeft': '-=672px'}, 750, "easeOutCirc");
         }
     });
     // end carousel
@@ -32,14 +32,14 @@ $(document).ready(function() {
    
     //buttons
 	$("#nav-search").hover(function () {
-	    $("#nav-search-button").attr("src","assets/images/search-icon-hover.svg");
+	    $("#nav-search-icon").attr("src","assets/images/magglass-hover.svg");
 	    $('#search-modal-container').slideDown(400);
 	},function () {
-		$("#nav-search-button").attr("src","assets/images/search-icon.svg");
+		$("#nav-search-icon").attr("src","assets/images/magglass.svg");
 		$('#search-modal-container').slideUp(100);
 	});
 
-	$("#fan-login-icon").hover(function () {
+	$("#login-container").hover(function () {
 	    $("#fan-login-icon").attr("src","assets/images/jersey-hover.svg");
 	    $("#fan-login-icon").css({'background': '#003262'});
 
@@ -53,20 +53,25 @@ $(document).ready(function() {
 	});
 
 	$("#search-button").click(function() {
-		alert("Woopsies, looks like some one forgot the backend... :'(");
+		alert("Woopsies, looks like someone forgot the backend... :'(");
 		$('#search-modal-container').slideUp(100);
 	});
 
-    $('#fan-login-icon').click(function() {
-        $('#login-modal-container').slideDown(400);
+    $('#login-container').click(function() {
+        $('#login-modal-container').fadeIn();
     });
     
-    $('.modal-button').click(function() {
-        $('#login-modal-container').hide();
+    $('#login-cancel-button').click(function() {
+        $('#login-modal-container').fadeOut();
+    });
+
+    $('#submit-button').click(function() {
+    	alert("Woopsies, looks like someone forgot the backend... :'(");
+        $('#login-modal-container').fadeOut();
     });
 
     $('#login-modal-overlay').click(function() {
-        $('#login-modal-container').hide();
+        $('#login-modal-container').fadeOut();
     });
     //buttons
 
@@ -88,6 +93,4 @@ $(document).ready(function() {
   		gutter: 0,
   		itemSelector: '.post'
 	});
-
-	
 });

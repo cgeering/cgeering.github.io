@@ -11,6 +11,14 @@
 	<link rel="shortcut icon" href="favicon.ico">
 </head>
 <body>
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=58950778361&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 	<div id="login-modal-container">
 		<div id="login-modal-overlay"></div>
 		<div id="login-modal-box-wrapper">
@@ -44,20 +52,35 @@
 	<div id="body-container">
 		<div id="nav-container">
 			<div id="nav">
-				<div id="nav-content">
-					<a href="news.html"><div class="nav-item">News</div></a>
-					<a href="team.html"><div class="nav-item">Team</div></a>
-					<div class="nav-item">Schedule</div>
-					<div class="nav-item">Tickets</div>
-					<div class="nav-item">Fan Zone!</div>
-					<div class="nav-item">Recruits</div>
-					<div class="nav-item">Donate</div>
-					<div class="nav-item" id="nav-search">Search<img id="nav-search-button" class="img-scaled-wh" src="assets/images/search-icon.svg" />
+				<div id="nav-position-container">
+					<a href="index.html"><div class="nav-item">
+						<div class="nav-item-content">Home</div>
+					</div></a>
+					<a href="news.html"><div class="nav-item">
+						<div class="nav-item-content">News</div>
+					</div></a>
+					<a href="team.html"><div class="nav-item">
+						<div class="nav-item-content">Team</div>
+					</div></a>
+					<a href="schedule.html"><div class="nav-item">
+						<div class="nav-item-content">Schedule</div>
+					</div></a>
+					<a href="fanzone.html"><div class="nav-item">
+						<div class="nav-item-content">Fan Zone!</div>
+					</div></a>
+					<a href="recruits.html"><div class="nav-item">
+						<div class="nav-item-content">Recruits</div>
+					</div></a>
+					<a href="donate.html"><div class="nav-item">
+						<div class="nav-item-content">Donate</div>
+					</div></a>
+					<div class="nav-item" id="nav-search">
+						<div class="nav-item-content">Search<img id="nav-search-icon" class="img-scaled-wh" src="assets/images/magglass.svg" /></div>
 						<div id="search-modal-container">
 							<div id="modal-content">
 								<input type="text" id="input-box" placeholder="Search CalIceHockey.com..."/>
 								<div id="search-button" class="modal-button">Search</div>
-                    			<div id="cancel-button" class="modal-button">Cancel</div>
+	                			<div id="cancel-button" class="modal-button">Cancel</div>
 							</div>
 						</div>
 					</div>
@@ -110,7 +133,7 @@
 							<div class="box-item-title">Back in the Saddle</div>
 							<div class="box-item-subtitle">After a long break, the Golden Bears are back in action<span class="elipses">. . .</span><span class="date">1/21/14</span></div>
 						</div>
-						<div class="box-item" id="feature-width">
+						<div class="box-item" id="last-feature">
 							<div class="box-item-title">SoCal Roadtrip</div>
 							<div class="box-item-subtitle">Follow the team as they venture down South to take on rivals USC and UCLA<span class="elipses">. . .</span><span class="date">11/21/13</span></div>
 						</div>
@@ -120,56 +143,54 @@
 				<div id="quick-info-container">
 					<div class="quick-info-box" style="margin-left: 22px;">
 						<div class="box-title" id="quick-box-width">Upcoming Games</div>
-						<div class="box-item" id="quick-box-width">
-							<div class="home-team"><img class="img-scaled-wh" src="assets/images/hockeyplayer.svg" /></div>
-							<div class="game-info">
-								<div class="game-title">vs. Stanford</div>
-								<div class="game-date"> Saturday, October 3, 2014</div>
-								<div class="game-tix">Tickets >></div>
-							</div>
-						</div>
+						<div class="quick-box-content-container">
 						<div class="box-item" id="quick-box-width">
 							<div class="away-team"><img class="img-scaled-wh" src="assets/images/hockeyplayeraway.svg" /></div>
 							<div class="game-info">
-								<div class="game-title">@ UCLA</div>
-								<div class="game-date"> Friday, November 15, 2014</div>
-								<div class="game-tix">Tickets >></div>
-							</div>
-						</div>
-						<div class="box-item" id="quick-box-width">
-							<div class="away-team"><img class="img-scaled-wh" src="assets/images/hockeyplayeraway.svg" /></div>
-							<div class="game-info">
-								<div class="game-title">@ USC</div>
-								<div class="game-date"> Saturday, Novembe, 2014</div>
+								<div class="game-title">@ SRJC</div>
+								<div class="game-date"> Tuesday, Sep 20, TBD</div>
 								<div class="game-tix">Tickets >></div>
 							</div>
 						</div>
 						<div class="box-item" id="quick-box-width">
 							<div class="home-team"><img class="img-scaled-wh" src="assets/images/hockeyplayer.svg" /></div>
 							<div class="game-info">
-								<div class="game-title">vs. Utah</div>
-								<div class="game-date"> Sunday, December 15, 2014</div>
+								<div class="game-title">vs. Santa Clara</div>
+								<div class="game-date">Friday, Oct 3, 8:45 p.m.</div>
 								<div class="game-tix">Tickets >></div>
 							</div>
+						</div>
+						<div class="box-item" id="quick-box-width">
+							<div class="home-team"><img class="img-scaled-wh" src="assets/images/hockeyplayer.svg" /></div>
+							<div class="game-info">
+								<div class="game-title">vs. Oregon</div>
+								<div class="game-date">Friday, Oct 10, 8:45 p.m.</div>
+								<div class="game-tix">Tickets >></div>
+							</div>
+						</div>
+						<div class="box-item" id="quick-box-width">
+							<div class="home-team"><img class="img-scaled-wh" src="assets/images/hockeyplayer.svg" /></div>
+							<div class="game-info">
+								<div class="game-title">vs. Oregon</div>
+								<div class="game-date">Saturday, Oct 11, 8:15 p.m.</div>
+								<div class="game-tix">Tickets >></div>
+							</div>
+						</div>
+						<div class="box-item" id="quick-box-width">
+							<div class="home-team"><img class="img-scaled-wh" src="assets/images/hockeyplayer.svg" /></div>
+							<div class="game-info">
+								<div class="game-title">vs. UC Davis</div>
+								<div class="game-date">Saturday, Oct 11, 8:45 p.m.</div>
+								<div class="game-tix">Tickets >></div>
+							</div>
+						</div>
 						</div>
 					</div>
 					<div class="quick-info-box">
 						<div class="box-title" id="quick-box-width">Social</div>
-							<div class="box-item" id="quick-box-width">
-								<div class="social-img"><img class="img-scaled-wh" src="assets/images/bird.svg" /></div>
-								<div class="social-title">Follow @CalIceHockey</div>
-							</div>
-							<div class="box-item" id="quick-box-width">
-							<div class="social-title">Recent tweets from @CalIceHockey</div>
-							<div class="tweet">Quodsi concludaturque ne sit!!!</div>
-							<div class="tweet">Ex nec moderatius intellegam...</div>
-							<div class="tweet">Pri te eros augue feugiat.</div>
-							<div class="tweet">Temporibus ne, has ad commune corrumpit.</div>
-						</div>
-						<div class="box-item" id="quick-box-width">
-							<div class="social-img"><img class="img-scaled-wh" src="assets/images/thumb.svg" /></div>
-							<div class="social-title">Like us on Facebook!</div>
-						</div>
+						<a class="twitter-timeline" href="https://twitter.com/Cal_IceHockey" data-widget-id="498375008633122816">Tweets by @Cal_IceHockey</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						<iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fcalicehockey&width=270&height=558&colorscheme=light&show_faces=true&header=false&stream=true&show_border=false&appId=58950778361" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:270px; height:558px;" allowTransparency="true"></iframe>
 					</div>
 					<div class="quick-info-box">
 						<div class="box-title" id="quick-box-width">PAC-8 Standings</div>

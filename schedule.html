@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="assets/style.css" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<script src="assets/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="assets/waypoints.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="assets/jquery.easing.1.3.js"></script>
+	<script src="assets/script.js"></script>
+	<title>Cal Ice Hockey</title>
+	<link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+	<div id="login-modal-container">
+		<div id="login-modal-overlay"></div>
+		<div id="login-modal-box-wrapper">
+			<div id="login-modal-box">
+				<div id="login-modal-header">Login</div>
+                <div id="modal-content">
+                    <input type="text" id="login-input-box" placeholder="Username"/>
+                    <input type="password" id="login-input-box" placeholder="Password"/>
+                </div>
+                <div id="login-modal-footer">
+                    <div id="submit-button" class="modal-button">Submit</div>
+                    <div id="login-cancel-button" class="modal-button">Cancel</div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div id="header">
+		<div id="header-container">
+			<div id="header-content">
+				<div id="logo"><a href="http://www.berkeley.edu/index.html"><img class="img-scaled-wh" src="assets/images/logo.jpg" /></a></div>
+				<a href="index.html"><div id="title">Ice Hockey</div></a>
+				<div id="login-container">
+					<div id="login">Fan Login</div>
+					<div id="login-img"><img id="fan-login-icon" class="img-scaled-wh" src="assets/images/jersey.svg" /></div>
+				</div>
+				<!-- <div id="social-media-conatiner">
+				</div> -->
+			</div>
+		</div>
+	</div>
+	<div id="body-container">
+		<div id="nav-container">
+			<div id="nav">
+				<div id="nav-position-container">
+					<a href="index.html"><div class="nav-item">
+						<div class="nav-item-content">Home</div>
+					</div></a>
+					<a href="news.html"><div class="nav-item">
+						<div class="nav-item-content">News</div>
+					</div></a>
+					<a href="team.html"><div class="nav-item">
+						<div class="nav-item-content">Team</div>
+					</div></a>
+					<a href="schedule.html"><div class="nav-item">
+						<div class="nav-item-content">Schedule</div>
+					</div></a>
+					<a href="fanzone.html"><div class="nav-item">
+						<div class="nav-item-content">Fan Zone!</div>
+					</div></a>
+					<a href="recruits.html"><div class="nav-item">
+						<div class="nav-item-content">Recruits</div>
+					</div></a>
+					<a href="donate.html"><div class="nav-item">
+						<div class="nav-item-content">Donate</div>
+					</div></a>
+					<div class="nav-item" id="nav-search">
+						<div class="nav-item-content">Search<img id="nav-search-icon" class="img-scaled-wh" src="assets/images/magglass.svg"/></div>
+						<div id="search-modal-container">
+							<div id="modal-content">
+								<input type="text" id="input-box" placeholder="Search CalIceHockey.com..."/>
+								<div id="search-button" class="modal-button">Search</div>
+	                			<div id="cancel-button" class="modal-button">Cancel</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="schedule-content-container">
+			<table id="schedule-table" class="table"> 
+  			<caption>Cal Ice Hockey - 2014/2015 Schedule</caption>
+			<thead> 
+			<tr> 
+			    <th>Date</th> 
+			    <th>Opponent</th> 
+			    <th>Location</th> 
+			    <th>Time (PT)</th> 
+			    <th>Results</th> 
+			</tr> 
+			</thead> 
+			<tbody> 
+			<tr> 
+			    <td>Tue, Sep 20</td> 
+			    <td><a href="http://www.santarosahockey.com/" target="_blank">Santa Rosa Junior College</a></td> 
+			    <td><a href="https://www.snoopyshomeice.com/" target="_blank">Snoopy's Home Ice</a></td> 
+			    <td>TBD</td> 
+			    <td>--</td> 
+			</tr> 
+			<tr> 
+			    <td>Fri, Oct 3</td> 
+			    <td><a href="http://www.scuhockey.com/" target="_blank">Santa Clara</a></td> 
+			    <td><a href="http://www.oaklandice.com/index2.html" target="_blank">Oakland Ice Center</a></td> 
+			    <td>8:45 p.m.</td> 
+			    <td>--</td> 
+			</tr> 
+			<tr> 
+			    <td>Fri, Oct 10</td> 
+			    <td><a href="http://oregonduckshockey.com/?page_id=18" target="_blank">Oregon</a></td>
+			    <td><a href="http://www.oaklandice.com/index2.html" target="_blank">Oakland Ice Center</a></td> 
+			    <td>8:45 p.m.</td> 
+			    <td>--</td> 
+			</tr> 
+			<tr> 
+			    <td>Sat, Oct 11</td> 
+			    <td><a href="http://oregonduckshockey.com/?page_id=18" target="_blank">Oregon</a></td>
+			    <td><a href="http://www.oaklandice.com/index2.html" target="_blank">Oakland Ice Center</a></td> 
+			    <td>8:15 p.m.</td> 
+			    <td>--</td> 
+			</tr> 
+			<tr> 
+			    <td>Fri, Oct 17</td> 
+			    <td><a href="http://www.ucdavisicehockey.com/" target="_blank">UC Davis</a></td> 
+			    <td><a href="http://www.oaklandice.com/index2.html" target="_blank">Oakland Ice Center</a></td> 
+			    <td>8:45 p.m.</td> 
+			    <td>--</td> 
+			</tr> 
+			<tr> 
+			    <td>Fri, Oct 24</td> 
+			    <td><a href="http://uclahockey.com/" target="_blank">UCLA</a></td> 
+			    <td><a href="http://www.lakingsvalleyicecenter.com/" target="_blank">LA Kings Valley Ice Center</a></td> 
+			    <td>TBD</td> 
+			    <td>--</td> 
+			</tr> 
+			<tr> 
+			    <td>Sat, Oct 25</td> 
+			    <td><a href="http://uclahockey.com/" target="_blank">UCLA</a></td> 
+			    <td><a href="http://www.lakingsvalleyicecenter.com/" target="_blank">LA Kings Valley Ice Center</a></td> 
+			    <td>TBD</td> 
+			    <td>--</td> 
+			</tr> 
+			<tr> 
+			    <td>Fri, Oct 31</td> 
+			    <td><a href="http://uscicehockey.com/" target="_blank">USC</a></td> 
+			    <td><a href="http://www.oaklandice.com/index2.html" target="_blank">Oakland Ice Center</a></td> 
+			    <td>8:45 p.m.</td> 
+			    <td>--</td> 
+			</tr> 
+			<tr> 
+			    <td>Sat, Nov 1</td> 
+			    <td><a href="http://uscicehockey.com/" target="_blank">USC</a></td> 
+			    <td><a href="http://www.oaklandice.com/index2.html" target="_blank">Oakland Ice Center</a></td> 
+			    <td>8:15 p.m.</td> 
+			    <td>--</td> 
+			</tr> 
+			<tr> 
+			    <td>Fri, Nov 7</td> 
+			    <td><a href="http://uclahockey.com/" target="_blank">UCLA</a></td> 
+			    <td><a href="http://www.oaklandice.com/index2.html" target="_blank">Oakland Ice Center</a></td> 
+			    <td>8:45 p.m.</td> 
+			    <td>--</td> 
+			</tr> 
+			<tr> 
+			    <td>Sat, Nov 8</td> 
+			    <td><a href="http://uclahockey.com/" target="_blank">UCLA</a></td> 
+			    <td><a href="http://www.oaklandice.com/index2.html" target="_blank">Oakland Ice Center</a></td> 
+			    <td>8:15 p.m.</td> 
+			    <td>--</td> 
+			</tr>
+			<tr> 
+			    <td>Fri, Nov 14</td> 
+			    <td><a href="http://uscicehockey.com/" target="_blank">USC</a></td> 
+			    <td><a href="http://www.anaheimice.com/" target="_blank">Anaheim Ice</a></td> 
+			    <td>TBD</td> 
+			    <td>--</td> 
+			</tr> 
+			<tr> 
+			    <td>Sat, Nov 15</td> 
+			    <td><a href="http://uscicehockey.com/" target="_blank">USC</a></td> 
+			    <td><a href="http://www.anaheimice.com/" target="_blank">Anaheim Ice</a></td> 
+			    <td>TBD</td> 
+			    <td>--</td> 
+			</tr> 
+			<tr> 
+			    <td>Thu, Nov 20</td> 
+			    <td><a href="http://web.stanford.edu/group/hockey/" target="_blank">Stanford</a></td> 
+			    <td><a href="http://www.oaklandice.com/index2.html" target="_blank">Oakland Ice Center</a></td> 
+			    <td>7:45 p.m.</td> 
+			    <td>--</td> 
+			</tr> 
+			<tr> 
+			    <td>Fri, Dec 5</td> 
+			    <td><a href="http://www.ucdavisicehockey.com/" target="_blank">UC Davis</a></td> 
+			    <td><a href="http://www.vacavilleicesport.com/" target="_blank">Vacaville Ice Sports</a></td> 
+			    <td>TBD</td> 
+			    <td>--</td> 
+			</tr> 
+			<tr> 
+			    <td>Fri, Jan 23</td> 
+			    <td><a href="http://www.huskyicehockey.com/view/washingtonhusky" target="_blank">UW</a></td> 
+			    <td><a href="http://www.olympicviewarena.com/" target="_blank">Olympicview Arena</a></td> 
+			    <td>TBD</td> 
+			    <td>--</td> 
+			</tr> 
+			<tr> 
+			    <td>Sat, Jan 24</td> 
+			    <td><a href="http://www.huskyicehockey.com/view/washingtonhusky" target="_blank">UW</a></td> 
+			    <td><a href="http://www.olympicviewarena.com/" target="_blank">Olympicview Arena</a></td> 
+			    <td>TBD</td> 
+			    <td>--</td> 
+			</tr> 
+			<tr> 
+			    <td>Fri, Jan 30</td> 
+			    <td><a href="http://www.scuhockey.com/" target="_blank">Santa Clara</a></td> 
+			    <td><a href="http://www.sharksiceatsanjose.com/" target="_blank">Sharks Ice at San Jose</a></td> 
+			    <td>TBD</td> 
+			    <td>--</td> 
+			</tr> 
+			<tr> 
+			    <td>Feb 6-8</td> 
+			    <td>PAC 8 Playoffs</td> 
+			    <td>Lake Tahoe, CA</td> 
+			    <td>TBD</td> 
+			    <td>--</td> 
+			</tr> 
+			</tbody> 
+			</table> 
+		</div>
+	</div>
+</body>
+</html>

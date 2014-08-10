@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  var Words; 
+  $("button").click(function(){
+    var WordFile = new XMLHttpRequest(); 
+    WordFile.open("GET", "file:///Users/cjgeering/CS/WebDesign/CalIceHockey/assets/data.txt", false); 
+    WordFile.onreadystatechange = 
+      function () {
+       if(WordFile.readyState === 4) 
+        { 
+          if(WordFile.status === 200 || WordFile.status == 0) 
+            { 
+              Words = WordFile.responseText;
+            } 
+          } 
+        }; 
+        WordFile.send(null);
+          alert(Words);
+    });
+});
+</script>
+</head>
+<body>
+
+<div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
+<button>Get External Content</button>
+
+</body>
+</html>
