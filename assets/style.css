@@ -270,6 +270,9 @@ body {
     color: #FDB515;
     border-bottom: 5px solid #FDB515;
     cursor: pointer;
+    -moz-box-shadow: inset 0 0 3px #000000;
+    -webkit-box-shadow: inset 0 0 3px #000000;
+    box-shadow: inset 0 0 3px #000000;
 }
 
 #nav-search {
@@ -842,20 +845,20 @@ body {
     -moz-transform-style: preserve-3d;
     -moz-backface-visibility: hidden;
     /* -- transition is the magic sauce for animation -- */
-    transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
     -ms-transition: all .4s ease-in-out;
     -moz-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
     
 }
 .panel.flip .front {
     z-index: 900;
-    transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
     -ms-transform: rotateY(180deg);
     -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 .panel .back {
     position: absolute;
@@ -873,20 +876,20 @@ body {
     -moz-transform-style: preserve-3d;
     -moz-backface-visibility: hidden;
     /* -- transition is the magic sauce for animation -- */
-    transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
     -ms-transition: all .4s ease-in-out;
     -moz-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
     
 }
 .panel.flip .back {
     z-index: 1000;
-    transform: rotateX(0deg) rotateY(0deg);
     -webkit-transform: rotateX(0deg) rotateY(0deg);
     -moz-transform: rotateX(0deg) rotateY(0deg);
     -ms-transform: rotateX(0deg) rotateY(0deg);
     -o-transform: rotateX(0deg) rotateY(0deg);
+    transform: rotateX(0deg) rotateY(0deg);
     
  }
 
