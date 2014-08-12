@@ -23,6 +23,9 @@ body {
     background: rgba(0,0,0, 1.0);
     background-image: url("images/bground.png");
     background-size: 100%;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-font-smoothing: subpixel-antialiased;
+    -ms-font-smoothing: subpixel-antialiased;
 }
 
 #bground-img{
@@ -283,13 +286,7 @@ body {
     font-family: Arial;
     font-weight: 500;
     /* margin-top: 10px; */
-    padding: 10px 20px 7px 20px;
-    /* padding: 0px 20px 7px 20px; */
-    border-right: 1px solid #ffc72c;
-    border-right: 1px solid #041e42;
-     
-    border: none; 
-    /* height: 25px; */
+    padding: 10px 20px 5px 20px;
 }
 
 #nav-search-icon {
@@ -360,7 +357,7 @@ body {
     width: 988px;
     height: 100%;
     margin: 0px auto;
-    background: rgba(255,255,255,0.45);
+    background: rgba(255,255,255,0.60);
     border-radius: 0px 0px 3px 3px;
     padding-bottom: 20px;
     position: relative;
@@ -613,7 +610,7 @@ body {
 #feature-footer {
     position: absolute;
     bottom: 0px;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0,0,0,0.6);
     width: 100%;
     z-index: 100;
 }
@@ -650,6 +647,7 @@ body {
     font-family: sans-serif;
     font-size: 16px;
     font-weight: 600;
+    border-radius: 0px 0px 5px 5px;
 }
 
 .tile-name {
@@ -657,7 +655,7 @@ body {
 }
 
 .tile-position {
-    font-size: 12px;
+    font-size: 14px;
     color: rgba(255,255,255, 0.8);
  }
 
@@ -844,16 +842,20 @@ body {
     -moz-transform-style: preserve-3d;
     -moz-backface-visibility: hidden;
     /* -- transition is the magic sauce for animation -- */
+    transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
     -ms-transition: all .4s ease-in-out;
     -moz-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
+    
 }
 .panel.flip .front {
     z-index: 900;
+    transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
 }
 .panel .back {
     position: absolute;
@@ -862,6 +864,7 @@ body {
     width: inherit;
     height: inherit;
     background: #041e42;
+    border-radius: inherit;
     -webkit-transform: rotateY(-180deg);
     -webkit-transform-style: preserve-3d;
     -webkit-backface-visibility: hidden;
@@ -870,15 +873,21 @@ body {
     -moz-transform-style: preserve-3d;
     -moz-backface-visibility: hidden;
     /* -- transition is the magic sauce for animation -- */
+    transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
     -ms-transition: all .4s ease-in-out;
     -moz-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
+    
 }
 .panel.flip .back {
     z-index: 1000;
+    transform: rotateX(0deg) rotateY(0deg);
     -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+    -ms-transform: rotateX(0deg) rotateY(0deg);
+    -o-transform: rotateX(0deg) rotateY(0deg);
+    
  }
 
  .panel .back p {
@@ -969,12 +978,127 @@ caption{
 }
 
 .quick-box-content-container {
-
-    
     overflow-y: scroll;
-    
-
     overflow-x: hidden;
-
     height: 345px;
+    width: 315px;
+}
 
+#donation-container {
+    float: left;
+    width: 548px;
+    margin: 2px 10px 0px 90px;
+    padding: 30px 20px 0px 20px;
+    border-left: 3px dotted #ccc;
+    border-right: 3px dotted #ccc;
+    font-size: 16px;
+    color: #041e42;
+    line-height: 40px;
+    height: 97%;
+}
+
+#donation-thankyou {
+    float: left;
+    width: 252px; 
+    margin: 30px 10px 0px 0px; 
+    padding: 0px 20px 10px 10px;  
+    border-bottom: 3px dotted #ccc; 
+    font-size: 14px; 
+    color: #FDB515; 
+    line-height: 24px;
+    font-weight: 600;
+}
+#donation-button-container {
+    /* position: relative; */
+    margin: 40px auto 0px auto;
+    width: 344px;
+    height: 50px;
+}
+
+.donation-button {
+    float: left;
+    width: 150px;
+    height: 46px;
+    background: blue;
+    margin-right: 40px;
+    text-align: center;
+    line-height: 45px;
+    letter-spacing: 0px;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 2px;
+    border: 1px solid #041e42;
+    opacity: .8;
+}
+
+#donate {
+    background: #FDB515;
+}
+
+#sponsor {
+    margin-right: 0px;
+    background: #ccc;
+}
+
+.donation-button:hover {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+#recruit-container {
+    float: left;
+    width: 550px;
+    margin: 2px 10px 0px 90px;
+    padding: 25px 20px 0px 20px;
+    border-left: 3px dotted #ccc;
+    border-right: 3px dotted #ccc;
+    font-size: 16px;
+    color: #041e42;
+    line-height: 40px;
+    height: 98%;
+}
+
+#recruit-button-container {
+    margin: 40px auto 0px auto;
+    width: 152px;
+    height: 48px;
+}
+
+#exec-list {
+    float: left;
+    margin: 17px 10px 0px 10px;
+}
+
+#exec-list-title {
+    font-size: 22px;
+
+    line-height: 33px;
+    color: #041e42;
+    border-bottom: 2px solid #FDB515;
+    margin-bottom: 10px;
+}
+
+.exec {
+    color: #041e42;
+
+    font-size: 14px;
+    line-height: 24px;
+    background: #ddd;
+    padding: 7px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.exec-email-button {
+    background: #FDB515;
+    
+    padding: 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+    font-weight: 600;
+    opacity: .8;
+}
+
+.exec-email-button:hover {
+    opacity: 1.0;
+}
