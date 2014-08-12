@@ -449,10 +449,10 @@ body {
 }
 
 #carousel-prev:hover {
-    background: rgba(0, 0, 0, 1);
+    background: rgba(0, 0, 0, .8);
 }
 #carousel-next:hover {
-    background: rgba(0, 0, 0, 1);
+    background: rgba(0, 0, 0, .8);
 }
 
 #features-container {
@@ -768,7 +768,7 @@ body {
     padding-left: 10px;
     height: 60px;
     overflow: hidden;
-    border-left: 1px solid #BBB;
+    border-left: 1px dotted #AAA;
 }
 
 .game-title {
@@ -821,9 +821,9 @@ body {
     width: 247px;
     height: 247px;
     float: left;
-    box-shadow: inset 0px 0px 7px #444;
-    background: rgba(255,255,255, 0.65);
-    border-radius: 0px;
+    box-shadow: inset 0px 0px 6px #444;
+    background: rgba(255,255,255, 0.70);
+    border-radius: 5px;
     overflow: hidden;
     -webkit-perspective: 600px;
     -moz-perspective: 600px;
@@ -861,6 +861,7 @@ body {
     z-index: 800;
     width: inherit;
     height: inherit;
+    background: #041e42;
     -webkit-transform: rotateY(-180deg);
     -webkit-transform-style: preserve-3d;
     -webkit-backface-visibility: hidden;
@@ -879,6 +880,21 @@ body {
     z-index: 1000;
     -webkit-transform: rotateX(0deg) rotateY(0deg);
  }
+
+ .panel .back p {
+    color: whitesmoke;
+    padding: 0px 20px;
+    font-size: 14px;
+    line-height: 20px;
+    word-wrap: break-word;
+    max-height: 247px;
+}
+
+.panel .back p span {
+    color: #FDB515;
+    font-weight: 600;
+    font-size: 15px;
+}
 
 /*------------------------Schedule STYLES-------------------------------------*/
 
@@ -960,10 +976,5 @@ caption{
 
     overflow-x: hidden;
 
-    height: 344px;
-
-}
-
-
-
+    height: 345px;
 

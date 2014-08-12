@@ -75,9 +75,10 @@ $(document).ready(function() {
     });
     //buttons
 
-    var count = 1;
+    var numbers = [2,3,6,7,9,11,13,17,18,19,20,21,23,25,26,27,28,30];
+    var count = 0;
 	$(".number").each(function(){
-    	$(this).text("#"+count);
+    	$(this).text("#"+numbers[count]);
     	count++;
 	});
 
