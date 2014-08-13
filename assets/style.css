@@ -268,11 +268,14 @@ body {
 .nav-item:hover {
     background: #041e42;
     color: #FDB515;
-    border-bottom: 5px solid #FDB515;
     cursor: pointer;
     -moz-box-shadow: inset 0 0 3px #000000;
     -webkit-box-shadow: inset 0 0 3px #000000;
     box-shadow: inset 0 0 3px #000000;
+}
+
+.no-drop:hover {
+    border-bottom: 5px solid #FDB515;
 }
 
 #nav-search {
@@ -353,6 +356,40 @@ body {
     background: #1b5c9a;
 }
 
+.drop-down-container {
+    background: #041e42;
+    display: none;   
+    margin-top: 2px;
+    position: absolute;
+    z-index: 100;
+    color: black;
+    list-style-type: none;
+    line-height: 28px;
+    border-bottom: 1px solid #fdb515;
+    cursor: default;
+}
+
+.drop-down-container li {
+    padding: 2px 20px;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: left;
+    color: #eee;
+    border-top: 1px solid #fdb515;
+    -webkit-transition: .15s ease-in-out;
+    -moz-transition: .15s ease-in-out;
+    -ms-transition: .15s ease-in-out;
+    -o-transition: .15s ease-in-out;
+    transition: .15s ease-in-out;
+}
+
+.drop-down-container li:hover {
+    background: #003262;
+    color: #041e42;
+    color: #FDB515;
+    text-decoration: underline;
+    cursor: pointer;
+}
 
 /*-----------------------CONTENT STYLES---------------------------------------*/
 

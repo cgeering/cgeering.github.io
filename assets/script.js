@@ -39,6 +39,14 @@ $(document).ready(function() {
 		$('#search-modal-container').slideUp(100);
 	});
 
+    $(".drop-down").hover(function () {
+        var x = "#" + $(this).attr('id') + "-menu";
+        $(x).slideDown(200);
+    },function () {
+        var x = "#" + $(this).attr('id') + "-menu";
+        $(x).slideUp(100);
+    });
+
 	$("#login-container").hover(function () {
 	    $("#fan-login-icon").attr("src","assets/images/jersey-hover.svg");
 	    $("#fan-login-icon").css({'background': '#003262'});
