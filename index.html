@@ -19,6 +19,7 @@
   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=58950778361&version=v2.0";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 	<div id="login-modal-container">
 		<div id="login-modal-overlay"></div>
 		<div id="login-modal-box-wrapper">
@@ -61,11 +62,11 @@
 					</div></a>
 					<a href="team.html"><div class="nav-item drop-down" id="team">
 						<div class="nav-item-content">Team</div>
-						<div class="drop-down-container" id="team-menu"><li>2014/2015 Roster</li><li>Coaches</li><li>Stats</li></div>
+						<div class="drop-down-container" id="team-menu"><li>2014/2015 Roster</li><a href="coaches.html"><li>Coaches</li></a><a href="stats.html"><li>Stats</li></a></div>
 					</div></a>
 					<a href="schedule.html"><div class="nav-item drop-down" id="schedule">
 						<div class="nav-item-content">Schedule</div>
-						<div class="drop-down-container" id="schedule-menu"><li>2014/2015 Schedule</li><li>Directions</li></div>
+						<div class="drop-down-container" id="schedule-menu"><li>2014/2015 Schedule</li><a href="directions.html"><li>Directions</li></a></div>
 					</div></a>
 					<a href="fanzone.html"><div class="nav-item no-drop">
 						<div class="nav-item-content">Fan Zone!</div>
@@ -144,7 +145,9 @@
 			</div>
 				<div id="quick-info-container">
 					<div class="quick-info-box" style="margin-left: 22px;">
-						<a href="schedule.html"><div class="box-title" id="quick-box-width">Upcoming Games</div></a>
+						<a href="schedule.html"><div class="box-title" id="quick-box-width">Upcoming Games
+							<div id="icon-container"><div class="game-icon" id="home-icon"></div><div class="icon-title">Home</div><div class="game-icon" id="away-icon"></div><div class="icon-title">Away</div></div>
+						</div></a>
 						<div class="quick-box-content-container">
 						<div class="box-item" id="quick-box-width">
 							<div class="away-team"><img class="img-scaled-wh" src="assets/images/hockeyplayeraway.svg" /></div>
@@ -182,17 +185,119 @@
 							<div class="home-team"><img class="img-scaled-wh" src="assets/images/hockeyplayer.svg" /></div>
 							<div class="game-info">
 								<div class="game-title">vs. UC Davis</div>
-								<div class="game-date">Saturday, Oct 11, 8:45 p.m.</div>
+								<div class="game-date">Friday, Oct 17, 8:45 p.m.</div>
+								<div class="game-tix">Tickets >></div>
+							</div>
+						</div>
+						<div class="box-item" id="quick-box-width">
+							<div class="away-team"><img class="img-scaled-wh" src="assets/images/hockeyplayeraway.svg" /></div>
+							<div class="game-info">
+								<div class="game-title">@ UCLA</div>
+								<div class="game-date">Friday, Oct 24, TBD</div>
+								<div class="game-tix">Tickets >></div>
+							</div>
+						</div>
+						<div class="box-item" id="quick-box-width">
+							<div class="away-team"><img class="img-scaled-wh" src="assets/images/hockeyplayeraway.svg" /></div>
+							<div class="game-info">
+								<div class="game-title">@ UCLA</div>
+								<div class="game-date">Saturday, Oct 25, TBD</div>
+								<div class="game-tix">Tickets >></div>
+							</div>
+						</div>
+						<div class="box-item" id="quick-box-width">
+							<div class="home-team"><img class="img-scaled-wh" src="assets/images/hockeyplayer.svg" /></div>
+							<div class="game-info">
+								<div class="game-title">vs. USC</div>
+								<div class="game-date">Friday, Oct 31, 8:45 p.m.</div>
+								<div class="game-tix">Tickets >></div>
+							</div>
+						</div>
+						<div class="box-item" id="quick-box-width">
+							<div class="home-team"><img class="img-scaled-wh" src="assets/images/hockeyplayer.svg" /></div>
+							<div class="game-info">
+								<div class="game-title">vs. USC</div>
+								<div class="game-date">Saturday, Nov 1, 8:15 p.m.</div>
+								<div class="game-tix">Tickets >></div>
+							</div>
+						</div>
+						<div class="box-item" id="quick-box-width">
+							<div class="home-team"><img class="img-scaled-wh" src="assets/images/hockeyplayer.svg" /></div>
+							<div class="game-info">
+								<div class="game-title">vs. UCLA</div>
+								<div class="game-date">Friday, Nov 7, 8:45 p.m.</div>
+								<div class="game-tix">Tickets >></div>
+							</div>
+						</div>
+						<div class="box-item" id="quick-box-width">
+							<div class="home-team"><img class="img-scaled-wh" src="assets/images/hockeyplayer.svg" /></div>
+							<div class="game-info">
+								<div class="game-title">vs. UCLA</div>
+								<div class="game-date">Saturday, Nov 8, 8:15 p.m.</div>
+								<div class="game-tix">Tickets >></div>
+							</div>
+						</div>
+						<div class="box-item" id="quick-box-width">
+							<div class="away-team"><img class="img-scaled-wh" src="assets/images/hockeyplayeraway.svg" /></div>
+							<div class="game-info">
+								<div class="game-title">@ USC</div>
+								<div class="game-date">Friday, Nov 14, TBD</div>
+								<div class="game-tix">Tickets >></div>
+							</div>
+						</div>
+						<div class="box-item" id="quick-box-width">
+							<div class="away-team"><img class="img-scaled-wh" src="assets/images/hockeyplayeraway.svg" /></div>
+							<div class="game-info">
+								<div class="game-title">@ USC</div>
+								<div class="game-date">Saturday, Nov 15, TBD</div>
+								<div class="game-tix">Tickets >></div>
+							</div>
+						</div>
+						<div class="box-item" id="quick-box-width">
+							<div class="home-team"><img class="img-scaled-wh" src="assets/images/hockeyplayer.svg" /></div>
+							<div class="game-info">
+								<div class="game-title">vs. Stanford</div>
+								<div class="game-date">Thursday, Nov 20, 7:45 p.m.</div>
+								<div class="game-tix">Tickets >></div>
+							</div>
+						</div>
+						<div class="box-item" id="quick-box-width">
+							<div class="away-team"><img class="img-scaled-wh" src="assets/images/hockeyplayeraway.svg" /></div>
+							<div class="game-info">
+								<div class="game-title">@ UC Davis</div>
+								<div class="game-date">Friday, Dec 5, TBD</div>
+								<div class="game-tix">Tickets >></div>
+							</div>
+						</div>
+						<div class="box-item" id="quick-box-width">
+							<div class="away-team"><img class="img-scaled-wh" src="assets/images/hockeyplayeraway.svg" /></div>
+							<div class="game-info">
+								<div class="game-title">@ UW</div>
+								<div class="game-date">Friday, Jan 23, TBD</div>
+								<div class="game-tix">Tickets >></div>
+							</div>
+						</div>
+						<div class="box-item" id="quick-box-width">
+							<div class="away-team"><img class="img-scaled-wh" src="assets/images/hockeyplayeraway.svg" /></div>
+							<div class="game-info">
+								<div class="game-title">@ UW</div>
+								<div class="game-date">Saturday, Jan 24, TBD</div>
+								<div class="game-tix">Tickets >></div>
+							</div>
+						</div>
+						<div class="box-item" id="quick-box-width">
+							<div class="away-team"><img class="img-scaled-wh" src="assets/images/hockeyplayeraway.svg" /></div>
+							<div class="game-info">
+								<div class="game-title">@ Santa Clara</div>
+								<div class="game-date">Friday, Jan 30, TBD</div>
 								<div class="game-tix">Tickets >></div>
 							</div>
 						</div>
 						</div>
 					</div>
 					<div class="quick-info-box" id="social-infobox-container">
-						<div class="box-title" id="quick-box-width">Social</div>
-						<iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fcalicehockey&width=270&height=65&colorscheme=light&show_faces=true&header=false&stream=true&show_border=false&appId=58950778361" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:270px; height:65px;" allowTransparency="true"></iframe>
+						<a href="fanzone.html"><div class="box-title" id="quick-box-width">Social</div></a><iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fcalicehockey&width=270&height=65&colorscheme=light&show_faces=true&header=false&stream=true&show_border=false&appId=58950778361" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:270px; height:65px;" allowTransparency="true"></iframe>
 						<a class="twitter-timeline" href="https://twitter.com/Cal_IceHockey" data-widget-id="498375008633122816">Tweets by @Cal_IceHockey</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 					</div>
 					<div class="quick-info-box">
 						<a href="http://pac8hockey.com/" target="_blank"><div class="box-title" id="quick-box-width">PAC-8 Standings</div></a>
@@ -257,4 +362,5 @@
 		</div>
 	</div>
 </body>
+<footer>Copyright &copy 2014 University of California, Berkeley | Official website of the Cal Ice Hockey Club | Site designed and maintained by webmaster C.J. Geering #6. Contact: cgeering@berkeley.edu | Report any bugs at CalIceHockey@berkeley.edu</footer>
 </html>

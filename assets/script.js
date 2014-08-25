@@ -15,7 +15,7 @@ $(document).ready(function() {
         if(carousel_margin >= 0) {
             return false;
         } else {
-            $('#carousel').animate({'marginLeft': '+=672px'}, 750, "easeOutCirc");
+            $('#carousel').animate({'marginLeft': '+=672px'}, 500, "easeOutCirc");
         }
     });
 
@@ -24,7 +24,7 @@ $(document).ready(function() {
         if(carousel_margin <= -4032) {
             return false;
         } else {
-            $('#carousel').animate({'marginLeft': '-=672px'}, 750, "easeOutCirc");
+            $('#carousel').animate({'marginLeft': '-=672px'}, 500, "easeOutCirc");
         }
     });
     // end carousel
@@ -33,7 +33,7 @@ $(document).ready(function() {
     //buttons
 	$("#nav-search").hover(function () {
 	    $("#nav-search-icon").attr("src","assets/images/magglass-hover.svg");
-	    $('#search-modal-container').slideDown(400);
+	    $('#search-modal-container').slideDown(200);
 	},function () {
 		$("#nav-search-icon").attr("src","assets/images/magglass.svg");
 		$('#search-modal-container').slideUp(100);
@@ -101,4 +101,10 @@ $(document).ready(function() {
   		gutter: 0,
   		itemSelector: '.post'
 	});
+
+    
+
+
+
+    
 });
