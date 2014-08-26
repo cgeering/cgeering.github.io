@@ -100,11 +100,5 @@ $(document).ready(function() {
 	$container.masonry({
   		gutter: 0,
   		itemSelector: '.post'
-	});
-
-    
-
-
-
-    
+	});    
 });

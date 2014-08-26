@@ -294,7 +294,7 @@ body {
     font-family: Arial;
     font-weight: 500;
     /* margin-top: 10px; */
-    padding: 10px 20px 5px 20px;
+    padding: 10px 20px 7px 20px;
 }
 
 #nav-search-icon {
@@ -361,7 +361,6 @@ body {
 .drop-down-container {
     background: #041e42;
     display: none;   
-    margin-top: 2px;
     position: absolute;
     z-index: 100;
     color: black;
@@ -376,7 +375,7 @@ body {
     font-size: 13px;
     font-weight: 600;
     text-align: left;
-    color: #eee;
+    color: #fff;
     border-top: 1px solid #fdb515;
     -webkit-transition: .15s ease-in-out;
     -moz-transition: .15s ease-in-out;
@@ -494,7 +493,7 @@ body {
 }
 
 #features-container {
-    height: 412px;
+    height: 410px;
     width: 284px;
     background: rgba(255,255,255,1.0);
     float: left;
@@ -1217,8 +1216,8 @@ caption{
 
 #fan-of-the-week-container {
     width: 225px;
-    margin: 20px auto;
-    border: 1px solid #ccc;
+    margin: 15px auto;
+    border: 2px solid #ccc;
     position: relative;
     overflow: hidden;
     border-radius: 50%;
@@ -1246,17 +1245,11 @@ caption{
 
 #fan-of-the-week-info {
     
-    margin: 0px 12px;
-    color: #fdb515;
-    background: #041e42;
-    padding: 5px;
-    font-size: 13px;
+    margin: 10px 0px 0px 0px;
+    color: #003262;
+    font-size: 16px;
     border-radius: 4px;
-}
-
-#fan-of-the-week-info:hover {
-    cursor: pointer;
-    text-decoration: underline;
+    text-align: center;
 }
 
 #upcoming-events-container {
@@ -1454,7 +1447,7 @@ footer {
     width: 900px;
     margin: auto;
     text-align: center;
-    padding: 10px;
+    padding: 0px 10px 10px 10px;
 }
 
 #directions-container {
@@ -1501,4 +1494,34 @@ footer {
 
 table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after { 
     content: " \25B4\25BE" 
+}
+
+#article {
+    width: 560px;
+    height: 100%;
+    background: #fff;
+    border-left: 2px dashed #eee;
+    border-right: 2px dashed #eee;
+    margin: auto;
+    line-height: 23px;
+    padding: 20px 10px 0px 10px;
+    font-size: 16px;
+    font-family: georgia;
+}
+
+#article-title {
+    font-size: 34px;
+    line-height: 38px;
+    font-style: italic;
+    font-weight: 700;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+#article-date {
+    font-size: 11px;
+    
+    line-height: 12px;
+    margin-top: 10px;
+    text-transform: uppercase;
 }
