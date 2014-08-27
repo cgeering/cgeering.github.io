@@ -47,13 +47,13 @@ $(document).ready(function() {
         $(x).slideUp(100);
     });
 
-	$("#login-container").hover(function () {
-	    $("#fan-login-icon").attr("src","assets/images/jersey-hover.svg");
-	    $("#fan-login-icon").css({'background': '#003262'});
-	},function () {
-		$("#fan-login-icon").attr("src","assets/images/jersey.svg");
-		$("#fan-login-icon").css({'background': '#ffc72c'});
-	});
+	// $("#login-container").hover(function () {
+	//     $("#fan-login-icon").attr("src","assets/images/jersey-hover.svg");
+	//     $("#fan-login-icon").css({'background': '#003262'});
+	// },function () {
+	// 	$("#fan-login-icon").attr("src","assets/images/jersey.svg");
+	// 	$("#fan-login-icon").css({'background': '#ffc72c'});
+	// });
 
 	$("#cancel-button").click(function() {
 		$('#search-modal-container').slideUp(100);
@@ -63,23 +63,24 @@ $(document).ready(function() {
 		alert("Woopsies, looks like someone forgot the backend... :'(");
 		$('#search-modal-container').slideUp(100);
 	});
-    var modalFadeTime = 200;
-    $('#login-container').click(function() {
-        $('#login-modal-container').fadeIn(modalFadeTime);
-    });
+
+    // var modalFadeTime = 200;
+    // $('#login-container').click(function() {
+    //     $('#login-modal-container').fadeIn(modalFadeTime);
+    // });
     
-    $('#login-cancel-button').click(function() {
-        $('#login-modal-container').fadeOut(modalFadeTime);
-    });
+    // $('#login-cancel-button').click(function() {
+    //     $('#login-modal-container').fadeOut(modalFadeTime);
+    // });
 
-    $('#submit-button').click(function() {
-    	alert("Woopsies, looks like someone forgot the backend... :'(");
-        $('#login-modal-container').fadeOut(modalFadeTime);
-    });
+    // $('#submit-button').click(function() {
+    // 	alert("Woopsies, looks like someone forgot the backend... :'(");
+    //     $('#login-modal-container').fadeOut(modalFadeTime);
+    // });
 
-    $('#login-modal-overlay').click(function() {
-        $('#login-modal-container').fadeOut(modalFadeTime);
-    });
+    // $('#login-modal-overlay').click(function() {
+    //     $('#login-modal-container').fadeOut(modalFadeTime);
+    // });
     //buttons
 
     var numbers = [2,3,6,7,9,11,13,17,18,19,20,21,23,25,26,27,28,30];
